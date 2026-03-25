@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrical Services Northampton | A.S Electrical Services</title>
+<meta name="description" content="Full range of electrical services in Northampton — rewires, fuse box upgrades, fault finding, socket installation, security lights, lighting, and repairs. Call for a fast quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.service-detail-card{background:var(--white);border-radius:var(--radius-lg);border:1px solid #e8edf4;box-shadow:var(--card-shadow);overflow:hidden;transition:var(--transition);display:grid;grid-template-columns:1fr 1fr;align-items:center;}
+.service-detail-card:hover{box-shadow:var(--card-shadow-hover);}
+.service-detail-card.reverse{direction:rtl;}
+.service-detail-card.reverse>*{direction:ltr;}
+.sdcard-img{height:340px;object-fit:cover;width:100%;}
+.sdcard-body{padding:44px 48px;}
+.sdcard-body h2{font-size:1.7rem;margin-bottom:12px;}
+@media(max-width:768px){
+  .service-detail-card{grid-template-columns:1fr;}
+  .service-detail-card.reverse{direction:ltr;}
+  .sdcard-img{height:220px;}
+  .sdcard-body{padding:28px;}
+}
+</style>
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="logo-text"><span class="logo-main">A.S Electrical</span><span class="logo-sub">Services · Northampton</span></div></a>
+    <nav class="main-nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="services.html" class="nav-link active">Services</a><a href="areas.html" class="nav-link">Areas</a><a href="reviews.html" class="nav-link">Reviews</a><a href="contact.html" class="nav-link">Contact</a></nav>
+    <div class="header-cta"><a href="tel:07860172486" class="header-phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07860 172486</a><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="services.html" class="nav-link">Services</a><a href="areas.html" class="nav-link">Areas</a><a href="reviews.html" class="nav-link">Reviews</a><a href="contact.html" class="nav-link">Contact</a>
+  <a href="tel:ADDPHONE" class="btn btn-primary mt-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Services</div>
+    <h1>Electrical Services in Northampton</h1>
+    <p>Rewires, consumer unit upgrades, fault finding, sockets, security lights, lighting, and repairs — all carried out to a high standard by your local Northampton electrician.</p>
+  </div>
+</section>
+
+<!-- SERVICE INTRO CARDS -->
+<section class="section">
+  <div class="container">
+    <!-- Service 1: Rewires -->
+    <div class="service-detail-card reveal" style="margin-bottom:32px;">
+      <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" alt="Electrical rewire Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Rewires</div>
+        <h2>Electrical Rewires</h2>
+        <p style="margin-top:12px;">Older properties often have wiring that no longer meets modern safety standards — rubber-insulated cables, inadequate earthing, or no RCD protection. A full rewire gives your home a fresh, fully compliant electrical system.</p>
+        <p style="margin-top:12px;">We carry out domestic rewires across Northampton with minimal disruption, keeping you informed at every stage of the process.</p>
+        <a href="contact.html" class="btn btn-primary mt-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Get a Rewire Quote</a>
+      </div>
+    </div>
+
+    <!-- Service 2: Fuse Box -->
+    <div class="service-detail-card reverse reveal" style="margin-bottom:32px;">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Consumer unit upgrade fuse box Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Consumer Units</div>
+        <h2>Fuse Box Upgrades</h2>
+        <p style="margin-top:12px;">An old-style fuse board with ceramic fuses or early MCBs does not offer the protection that modern electrics require. A new consumer unit with RCDs and RCBOs significantly improves your home's electrical safety.</p>
+        <p style="margin-top:12px;">We replace outdated fuse boards with modern consumer units across Northampton, typically completing the work within a day.</p>
+        <a href="contact.html" class="btn btn-primary mt-6">Get a Fuse Box Quote</a>
+      </div>
+    </div>
+
+    <!-- Service 3: Fault Finding -->
+    <div class="service-detail-card reveal" style="margin-bottom:32px;">
+      <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=800&q=80" alt="Electrical fault finding Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Fault Finding</div>
+        <h2>Electrical Fault Finding</h2>
+        <p style="margin-top:12px;">Tripping RCDs, flickering lights, a circuit that won't stay on, or partial power loss — electrical faults can be frustrating and worrying. We diagnose the root cause efficiently using proper testing equipment.</p>
+        <p style="margin-top:12px;">We respond promptly to urgent faults across Northampton, including situations like damaged mains cabling that need immediate professional attention.</p>
+        <a href="contact.html" class="btn btn-primary mt-6">Book a Fault Finding Visit</a>
+      </div>
+    </div>
+
+    <!-- Service 4: Sockets -->
+    <div class="service-detail-card reverse reveal" style="margin-bottom:32px;">
+      <img src="socket_installation_northampton_1774389549198.png" alt="Socket installation Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg>Sockets</div>
+        <h2>Socket Installation &amp; Replacement</h2>
+        <p style="margin-top:12px;">Running out of sockets, or replacing scorch-damaged or loose-fitting ones? We install new single and double sockets, USB outlets, and switched spurs — all with a clean, flush finish.</p>
+        <p style="margin-top:12px;">Whether you need one new socket or a set of additional points across multiple rooms, we'll advise on the best approach and complete the work neatly.</p>
+        <a href="contact.html" class="btn btn-primary mt-6">Get a Quote</a>
+      </div>
+    </div>
+
+    <!-- Service 5: Security Lights -->
+    <div class="service-detail-card reveal" style="margin-bottom:32px;">
+      <img src="security_lighting_northampton_1774389509013.png" alt="Security light installation Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>Security Lights</div>
+        <h2>Security Light Installation</h2>
+        <p style="margin-top:12px;">A well-positioned security light is one of the most effective deterrents for your property. We install PIR-activated LED floodlights, dusk-to-dawn lights, and security fittings to exactly the right position and angle.</p>
+        <p style="margin-top:12px;">All security lights are mains-wired for reliability, properly secured to the wall, and dressed neatly for a professional finish.</p>
+        <a href="contact.html" class="btn btn-primary mt-6">Get a Quote</a>
+      </div>
+    </div>
+
+    <!-- Service 6: Lighting -->
+    <div class="service-detail-card reverse reveal" style="margin-bottom:32px;">
+      <img src="lighting_installation_northampton_1774389588568.png" alt="Lighting installation Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4.5a.5.5 0 0 1 1 0V6a.5.5 0 0 1-1 0V4.5z"/><circle cx="12" cy="12" r="2"/></svg>Lighting</div>
+        <h2>Indoor &amp; Outdoor Lighting</h2>
+        <p style="margin-top:12px;">Good lighting transforms the feel of a room. We install recessed downlights, pendant fittings, LED strips, garden and exterior lighting, and full lighting circuits for new builds or renovations.</p>
+        <p style="margin-top:12px;">All lighting work is wired to a clean professional standard — no unfinished connections, no trailing cables, just a neat, reliable result.</p>
+        <a href="contact.html" class="btn btn-primary mt-6">Book an Electrician</a>
+      </div>
+    </div>
+
+    <!-- Service 7: Repairs -->
+    <div class="service-detail-card reveal">
+      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Electrical repairs Northampton" class="sdcard-img" loading="lazy">
+      <div class="sdcard-body">
+        <div class="section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Repairs</div>
+        <h2>Electrical Repairs</h2>
+        <p style="margin-top:12px;">Whether it's a failed socket, a damaged light switch, a broken spur connection, or something more complex — we diagnose and fix electrical faults and damage quickly and properly.</p>
+        <p style="margin-top:12px;">No job is too small. If something isn't working correctly or safely, we'll identify the issue and put it right.</p>
+        <a href="contact.html" class="btn btn-primary mt-6">Book a Repair</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-banner">
+  <div class="container">
+    <div style="max-width:640px;margin:0 auto;text-align:center;" class="reveal">
+      <h2>Need Any of These Services<br>in Northampton?</h2>
+      <p class="mt-4">Contact A.S Electrical Services for a fast, no-obligation quote. We cover Northampton and the surrounding Northamptonshire area.</p>
+      <div class="flex gap-4 flex-wrap mt-8" style="justify-content:center;">
+        <a href="tel:07860172486" class="btn btn-primary mt-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07860 172486</a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top"><div class="container"><div class="footer-grid">
+    <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="logo-text"><span class="logo-main">A.S Electrical</span><span class="logo-sub">Services · Northampton</span></div></a><p>Trusted local electrician in Northampton — reliable, safe electrical services for homes and businesses.</p></div>
+    <div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="areas.html">Areas</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div></div>
+    <div><div class="footer-heading">Services</div><div class="footer-links"><a href="services.html">Electrical Rewires</a><a href="services.html">Fault Finding</a><a href="services.html">Consumer Unit Upgrades</a><a href="services.html">Socket Installation</a><a href="services.html">Security Lights</a><a href="services.html">Lighting Work</a></div></div>
+    <div><div class="footer-heading">Contact</div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:07860172486">07860 172486</a></div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@aselectricalservices.co.uk">info@aselectricalservices.co.uk</a></div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>55 Holly Rd, Northampton NN1 4QL</div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Available 24/7</div></div>
+  </div></div></div>
+  <div class="container"><div class="footer-bottom"><span>&copy; 2025 A.S Electrical Services. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a></div></div></div>
+</footer>
+<a href="tel:07860172486" class="mobile-call-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07860 172486 — A.S Electrical</a>
+<script>
+const header=document.getElementById('siteHeader');
+window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>40));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileNav').classList.add('open'));
+document.getElementById('mobileClose').addEventListener('click',()=>document.getElementById('mobileNav').classList.remove('open'));
+const reveals=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('revealed');}),{threshold:0.1});
+reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
