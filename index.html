@@ -128,14 +128,14 @@
         </div>
         <div class="hero-card">
           <h3 class="hero-card-title">Get a Free Quote</h3>
-          <form class="hero-card-form" onsubmit="return false;">
+          <form class="hero-card-form" onsubmit="handleSubmitHero(event)" id="heroForm">
             <div class="form-group">
               <label>Your Name</label>
-              <input type="text" class="form-control" placeholder="e.g. James Smith">
+              <input type="text" class="form-control" id="heroName" placeholder="e.g. James Smith" required>
             </div>
             <div class="form-group">
               <label>Phone Number</label>
-              <input type="tel" class="form-control" placeholder="Your phone number">
+              <input type="tel" class="form-control" id="heroPhone" placeholder="Your phone number" required>
             </div>
             <div class="form-group">
               <label>Your Address</label>
@@ -143,7 +143,7 @@
             </div>
             <div class="form-group">
               <label>Service Needed</label>
-              <select class="form-control">
+              <select class="form-control" required>
                 <option value="">Select a service...</option>
                 <option>Rewire</option>
                 <option>Fuse Box / Consumer Unit Upgrade</option>
@@ -161,6 +161,11 @@
             </button>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.45);text-align:center;margin-top:8px;">We'll get back to you promptly.</p>
           </form>
+          <div id="heroSuccess" style="display:none;text-align:center;padding:20px 0;">
+            <div class="icon-badge icon-badge-amber" style="margin: 0 auto 20px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <h3 style="color:var(--white);margin-bottom:12px;">Thank you, <span id="heroUserName"></span>!</h3>
+            <p style="color:rgba(255,255,255,0.8);font-size:0.95rem;">We've received your quote request and we are thankful for it. You will receive a phone call soon to confirm your details.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -591,6 +596,13 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('revealed'); });
 }, { threshold: 0.12 });
 reveals.forEach(el => observer.observe(el));
+function handleSubmitHero(e){
+  e.preventDefault();
+  const name = document.getElementById('heroName').value;
+  document.getElementById('heroUserName').textContent = name;
+  document.getElementById('heroForm').style.display='none';
+  document.getElementById('heroSuccess').style.display='block';
+}
 
 // Counter animation
 const counters = document.querySelectorAll('[data-count]');

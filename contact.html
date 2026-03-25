@@ -104,8 +104,8 @@
         </form>
         <div id="formSuccess" style="display:none;background:#f0fdf4;border:1.5px solid #86efac;border-radius:14px;padding:28px;text-align:center;margin-top:20px;">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:40px;height:40px;color:#16a34a;margin:0 auto 12px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h3 style="color:#15803d;margin-bottom:8px;">Message Sent!</h3>
-          <p style="color:#166534;">Thank you for your enquiry. We'll be in touch shortly.</p>
+          <h3 style="color:#15803d;margin-bottom:8px;">Thank you, <span id="userName"></span>!</h3>
+          <p style="color:#166534;">We've received your quote request and we are thankful for it. You will receive a phone call soon to confirm your details and provide a quote.</p>
         </div>
       </div>
 
@@ -188,6 +188,8 @@ const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersect
 reveals.forEach(el=>obs.observe(el));
 function handleSubmit(e){
   e.preventDefault();
+  const name = document.getElementById('name').value;
+  document.getElementById('userName').textContent = name;
   document.getElementById('contactForm').style.display='none';
   document.getElementById('formSuccess').style.display='block';
 }
